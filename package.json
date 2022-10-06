@@ -1,13 +1,16 @@
 {
-  "name": "server",
+  "name": "food-explorer-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "foodExplorer API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "pm2-runtime start ecosystem.config.js --env production",
+    "dev": "nodemon ./src/server.js",
+    "migrate": "knex migrate:latest",
+    "seed": "knex seed:run"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dev-Shinsei",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.20"
