@@ -1,4 +1,4 @@
-const knex = require("knex");
+const knex = require("../database/knex");
 
 class CartsController {
   async create(request, response) {
@@ -44,7 +44,6 @@ class CartsController {
         orders: cartOrder,
       };
     });
-
     return response.status(201).json(cartsWithOrders);
   }
 

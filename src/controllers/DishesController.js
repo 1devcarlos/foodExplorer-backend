@@ -1,4 +1,4 @@
-const knex = require("knex");
+const knex = require("../database/knex");
 const DiskStorage = require("../providers/DiskStorage");
 
 class DishesController {
@@ -27,7 +27,7 @@ class DishesController {
         name: ingredients,
         dish_id,
       };
-    } else if (ingredients.lenght > 1) {
+    } else if (ingredients.length > 1) {
       ingredientsInsert = ingredients.map((ingredient) => {
         return {
           name: ingredient,
@@ -70,13 +70,13 @@ class DishesController {
 
     const hasOnlyOneIngredient = typeof ingredients === "string";
 
-    let ingredtientsInsert;
+    let ingredientsInsert;
     if (hasOnlyOneIngredient) {
       ingredientsInsert = {
         dish_id: dish.id,
         name: ingredients,
       };
-    } else if (ingredients.lenght > 1) {
+    } else if (ingredients.length > 1) {
       ingredientsInsert = ingredients.map((ingredient) => {
         return {
           dish_id: dish.id,
@@ -90,7 +90,7 @@ class DishesController {
         .insert(ingredientsInsert);
     }
 
-    return response.status(201).json();
+    return response.status(200).json();
   }
 
   async index(request, response) {
@@ -114,7 +114,7 @@ class DishesController {
         ])
         .whereLike("dishes.title", `%${title}%`)
         .whereIn("name", filterIngredients)
-        .innerJoin("dishes", "dishes.id", "ingredients.dishes_id")
+        .innerJoin("dishes", "dishes.id", "ingredients.dish_id")
         .groupBy("dishes.id")
         .orderBy("dishes.title");
     } else {
@@ -124,7 +124,7 @@ class DishesController {
     }
 
     const dishesIngredients = await knex("ingredients");
-    const dishesWithIngredients = dishes.map((dishe) => {
+    const dishesWithIngredients = dishes.map((dish) => {
       const dishIngredient = dishesIngredients.filter(
         (ingredient) => ingredient.dish_id === dish.id
       );

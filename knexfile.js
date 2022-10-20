@@ -6,6 +6,7 @@ module.exports = {
     connection: {
       filename: path.resolve(__dirname, "src", "database", "database.db"),
     },
+    useNullAsDefault: true,
     pool: {
       afterCreate: (conn, cb) => conn.run("PRAGMA foreign_keys = ON", cb),
     },
@@ -21,6 +22,5 @@ module.exports = {
     seeds: {
       directory: path.resolve(__dirname, "src", "database", "knex", "seeds"),
     },
-    useNullAsDefault: true,
   },
 };
