@@ -23,11 +23,6 @@
  <a href="#-license">License</a>
 </p>
 
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="foodexplorer" title="#foodexplorer" src=".github/Capa.png" width="100%">
-
-</p>
-
 ---
 
 ## 💻 About
