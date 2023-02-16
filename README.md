@@ -133,4 +133,4 @@ The following tools were used in the construction of the project:
 
 This project is under the license [MIT](./LICENSE).
 
-Made with ❤️ by Êxodo Gurgel 👋🏽 [Get in Touch!](Https://www.linkedin.com/in/exodo-gurgel/)
+Made with ❤️ by Carlos Gomes 👋🏽 [Get in Touch!](Https://www.linkedin.com/in/devshinsei/)
