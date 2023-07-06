@@ -3,37 +3,34 @@
 </h1>
 
 <p align="center">
+
+  <img alt="Static Badge" src="https://img.shields.io/badge/status-concluido-green">
 	
   <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=49AA26&labelColor=000000" alt="welcome!" />
 	
   <img src="https://img.shields.io/github/languages/count/Dev-Shinsei/foodExplorer-backend" alt="languages" />
 	
-  <img alt="Github License" src="https://img.shields.io/github/license/Dev-Shinsei/foodExplorer-backend" />
+  <img alt="Github" src="https://img.shields.io/github/license/1devcarlos/foodExplorer-backend" />
 
 </p>
 
-<h4 align="center"> 
-	 Status: Finished
-</h4>
 
 <p align="center">
- <a href="#-about">About</a> •
- <a href="#-features">Features</a> •
- <a href="#-tech-stack">Tech Stack</a> • 
- <a href="#-license">License</a>
+ <a href="#-sobre">Sobre</a> •
+ <a href="#-tecnologias">Tecnologias</a> •
 </p>
 
 ---
 
-## 💻 About
+## 💻 Sobre
 
-API Restful - The application that we will develop is a digital menu for a fictional restaurant, known as foodExplorer.
+API Restful - O Food Explorer é uma aplicação de menu digital para um restaurante fictício conhecido como foodExplorer.
 
-In this challenge, the following topics were addressed:
+Neste desafio, foram abordados os seguintes tópicos:
 
 - Express;
-- Routes and http method;
-- Params;
+- Rotas e métodos http;
+- Parâmetros;
 - Controllers;
 - Middleware;
 - SQL;
@@ -41,78 +38,80 @@ In this challenge, the following topics were addressed:
 - Query Builder;
 - Knex;
 - JWT;
-- Disk Storage;
+- Armazenamento em disco;
 - Cors;
 
 ---
 
-## ⚙️ Features
+## ⚙️ Funcionalidades
 
-- [x] A structured project, with a good organization of folders, division of components in the front-end, etc.
-- [x] A README.md file with specifications on how to run the project in a dev environment.
-- [x] Users must authenticate themselves to enter the application through the login screen, you can apply what you learned in JWT authentication classes. Authentication must be validated with a password.
-- [x] The admin will upload images to register the dishes.
-- [x] Finally, deploy your application.
-- [x] Give your functions and variables meaningful names: work with Clean Code concepts a bit.
-- [x] The admin, restaurant and users data will be stored in a database.
-- [x] Possibility to search by dish name, ingredients or favorite dish
-- [x] It is essential that your interface consumes its own API.
-- [x] Interesting to make the application responsive: use the concept of Mobile First that was learned in class.
-- [x] It's up to you where to apply animations, transitions, and transformations.
-- [x] It meets the model proposed in Figma and contains elements indicative of action and state.
+- [x] Projeto estruturado, com boa organização de pastas e divisão de componentes no frontend.
+- [x] Arquivo README.md com instruções sobre como executar o projeto em ambiente de desenvolvimento.
+- [x] Os usuários devem se autenticar para entrar na aplicação por meio da tela de login, aplicando o que foi aprendido nas aulas de autenticação JWT. A autenticação deve ser validada com uma senha.
+- [x] O administrador fará upload de imagens para registrar os pratos.
+- [x] Por fim, faça o deploy da aplicação.
+- [x] Dê nomes significativos às suas funções e variáveis: trabalhe um pouco com os conceitos de Clean Code.
+- [x] Os dados de admin, restaurante e usuários serão armazenados em um banco de dados.
+- [x] Possibilidade de pesquisa por nome do prato, ingredientes ou prato favorito.
+- [x] É essencial que a interface consuma sua própria API.
+- [x] Interessante tornar a aplicação responsiva: utilize o conceito de Mobile First aprendido nas aulas.
+- [x] Você decide onde aplicar animações, transições e transformações.
+- [x] Atenda ao modelo proposto no Figma e contenha elementos indicativos de ação e estado.
 
-Optionals
+Opcionais
 
-- [x] The user can add items to the cart by clicking the add button. The amount is controlled by the “-” and “+” buttons;
-- [x] By clicking on the my order button, the user will be redirected to a screen where he will see his order, the sum and the payment methods;
-- [x] The user will be able to delete a dish from the cart and the total amount of the order should be updated automatically;
-- [x] The user can mark a dish as a favorite, just click on the heart that appears next to each one;
-- [x] The admin will view and control the status of each order, through a select field. Orders will appear in a table when you click Orders;
+- [x] O usuário pode adicionar itens ao carrinho clicando no botão "Adicionar". A quantidade é controlada pelos botões "-" e "+".
+- [x] Ao clicar no botão "Meu Pedido", o usuário será redirecionado para uma tela onde poderá ver seu pedido, a soma total e os métodos de pagamento.
+- [x] O usuário poderá excluir um prato do carrinho e o valor total do pedido será atualizado automaticamente.
+- [x] O usuário pode marcar um prato como favorito, basta clicar
+
+no ícone de coração ao lado de cada prato.
+- [x] O administrador poderá visualizar e controlar o status de cada pedido por meio de um campo de seleção. Os pedidos serão exibidos em uma tabela ao clicar em "Pedidos".
 
 ---
 
-## 🚀 How it works
+## 🚀 Como Funciona
 
-This project is divided into three parts:
+Este projeto está dividido em três partes:
 
-1. Backend (foodExplorer-backend folder)
-2. Frontend (foodExplorer-frontend folder)
+1. Backend (pasta foodExplorer-backend)
+2. Frontend (pasta foodExplorer-frontend)
 
-### Pre-requisites
+### Pré-requisitos
 
-Before you begin, you will need to have the following tools installed on your machine: [Git] (https://git-scm.com), [Node.js] (https://nodejs.org/en/). In addition, it is good to have an editor to work with the code like [VSCode] (https://code.visualstudio.com/)
+Antes de começar, você precisará ter as seguintes ferramentas instaladas em sua máquina: [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). Além disso, é recomendável ter um editor de código como o [VSCode](https://code.visualstudio.com/) para trabalhar com o código.
 
-#### 🎲 Running the Server (Backend)
+#### 🎲 Executando o Servidor (Backend)
 
 ```bash
-# Clone this repository
-$ git clone git@github.com:Dev-Shinsei/foodExplorer-backend.git
+# Clone este repositório
+$ git clone git@github.com:1devcarlos/foodExplorer-backend.git
 
-# Access the project folder in your terminal
-$ cd food-explorer-backend
+# Acesse a pasta do projeto no terminal
+$ cd foodExplorer-backend
 
-# Install the dependencies
+# Instale as dependências
 $ npm install
 
-# run the migration and seed
+# Execute a migração e o seed
 $ npm migrate
 $ npm seed
 
-# Run the application in development mode
+# Execute a aplicação em modo de desenvolvimento
 $ npm run dev
 
-# Admin login
+# Login do administrador
 $ email: admin@email.com
 $ password: 33283982
 
-# The Server will start at port: 3333 - go to http://localhost:3333
+# O servidor será iniciado na porta: 3333 - acesse http://localhost:3333
 ```
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Tecnologias
 
-The following tools were used in the construction of the project:
+As seguintes ferramentas foram utilizadas na construção deste projeto:
 
 - [Express](https://expressjs.com/)
 - [CORS](https://expressjs.com/en/resources/middleware/cors.html)
@@ -123,14 +122,9 @@ The following tools were used in the construction of the project:
 
 ---
 
-## 💻 **Project**
+## 💻 **Projeto**
 
-## The application that we will develop is a digital menu for a fictional restaurant, known as Food Explorer.
+## A aplicação que desenvolveremos é um menu digital para um restaurante fictício conhecido como Food Explorer.
 
----
 
-## 📝 License
-
-This project is under the license [MIT](./LICENSE).
-
-Made with ❤️ by Carlos Gomes 👋🏽 [Get in Touch!](Https://www.linkedin.com/in/devshinsei/)
+Feito com ❤️ por Carlos Gomes 👋🏽 [Entre em Contato!](https://www.linkedin.com/in/1devcarlos/)
